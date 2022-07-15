@@ -36,7 +36,7 @@ export default {
                 } else if (this.currentActive === this.slidesArray.length - 1) {
                     this.currentActive = 0
                 }
-            }, 3000);
+            }, 6000);
         },
         selectThis(index) {
             this.currentActive = index
