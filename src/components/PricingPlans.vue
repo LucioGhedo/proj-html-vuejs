@@ -184,6 +184,7 @@ export default {
     width: calc((100% / 4) - 15px);
     background-color: $back_1;
     margin-bottom: 90px;
+    height: fit-content;
     h3 {
         margin-top: 130px;
         margin-bottom: 30px;

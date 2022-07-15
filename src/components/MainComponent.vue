@@ -22,6 +22,9 @@
         <section>
             <PricingPlans />
         </section>
+        <section>
+            <SponsorSection />
+        </section>
     </div>
 </template>
 
@@ -34,6 +37,7 @@ import SliderComponent from './SliderComponent.vue';
 import SelectionComponent from './SelectionComponent.vue';
 import PopularCouses from './PopularCouses.vue';
 import PricingPlans from './PricingPlans.vue';
+import SponsorSection from './SponsorSection.vue';
 
 export default {
     name: 'MainComponent',
@@ -44,7 +48,8 @@ export default {
     SliderComponent,
     SelectionComponent,
     PopularCouses,
-    PricingPlans
+    PricingPlans,
+    SponsorSection
 },
     data() {
         return {
