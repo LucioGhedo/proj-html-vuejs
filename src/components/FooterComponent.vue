@@ -36,7 +36,7 @@
                 </div>
                 <div class="col">
                     <h3>Support</h3>
-                    <div v-for="items in secondList" :key="items" class="text text8">
+                    <div v-for="items in secondList" :key="items" class="text text8 hovereffect">
                         <div>
                             {{items.support}}
                         </div>
@@ -136,5 +136,17 @@ img {
     position: absolute;
     bottom: 50px;
     right: 0;
+}
+.hovereffect {
+    padding: 5px;
+}
+.hovereffect:hover {
+    background-color: $back_3;
+    text-decoration: underline $text4;
+    padding: 5px;
+    width: fit-content;
+    div {
+        color: $text4;
+    }
 }
 </style>
