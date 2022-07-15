@@ -1,0 +1,22 @@
+@import './vars.scss';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.flex {
+    display: flex;
+}
