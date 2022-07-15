@@ -25,7 +25,7 @@
                 </div>
                 <div class="col">
                     <h3>Popular Courses</h3>
-                    <div v-for="item in firstList" :key="item" class="text">
+                    <div v-for="item in firstList" :key="item" class="text hovereffect">
                         <div class="title">
                             {{item.title}}
                         </div>
@@ -146,6 +146,9 @@ img {
     padding: 5px;
     width: fit-content;
     div {
+        color: $text4;
+    }
+    span {
         color: $text4;
     }
 }
