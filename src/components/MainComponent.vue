@@ -4,15 +4,16 @@
             <section>
                 <CardsComponent :CardsArray="cardsArray" />
             </section>
+        </div>
             <section>
                 <TrustedSection />
             </section>
             <section>
                 <SecondSection />
             </section>
-        </div>
-
-        <SliderComponent />
+        <section>
+            <SliderComponent />
+        </section>
         <section>
             <SelectionComponent />
         </section>
