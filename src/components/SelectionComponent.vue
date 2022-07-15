@@ -6,35 +6,41 @@
         </div>
         <div class="flex">
             <div class="selection">
-                <div class="option active">What We Do</div>
-                <div class="option">Degree Programme</div>
-                <div class="option">Career Achievements</div>
-                <div class="option">Personal Managment</div>
-                <div class="option">Steps To Sucess</div>
-                <div class="option">Knowledge Transfer</div>
+                <div 
+                @click="setCurrentActive(index)"
+                v-for="item, index in links" 
+                :key="index" 
+                :class="currentActive === index ? 'active' : 'ciao'"
+                class="option">
+                    {{item.text}}
+                </div>
             </div>
-            <div class="selected">
-                <h2>Learning Possibilities</h2>
+            <div 
+            v-for="items, index in pageElement" 
+            :key="index" 
+            class="selected"
+            :class="currentActive === index ? '' : 'hidden'">
+                <h2>{{items.title}}</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.
+                    {{items.p}}
                 </p>
                 <p>
                     <i class="fa-solid fa-check"></i> 
-                    We enrich lives through learning.
+                    {{items.check1}}
                 </p>
                 <p>
                     <i class="fa-solid fa-check"></i> 
-                    Maximizing potential through individual attention.
+                    {{items.check2}}
                 </p>
                 <p>
                     <i class="fa-solid fa-check"></i> 
-                    The trusted name for specializing training.
+                    {{items.check3}}
                 </p>
                 <p>
                     <i class="fa-solid fa-check"></i> 
-                    People teach. People learn. This is where they connect.
+                    {{items.check4}}
                 </p>
-                <img src="../assets/img/h12-tabs-icon-1.png" alt="img">
+                <img :src="require(`../assets/img/${items.img}`)" alt="img">
             </div>
         </div>
     </div>
@@ -43,6 +49,99 @@
 <script>
 export default {
     name: 'SelectionComponent',
+    data() {
+        return {
+            currentActive: 0,
+            links: [
+                {
+                    text: 'What we do'
+                },
+                {
+                    text: 'Degree Programme'
+                },
+                {
+                    text: 'Career Achievements'
+                },
+                {
+                    text: 'Personal Managment'
+                },
+                {
+                    text: 'Steps To Sucess'
+                },
+                {
+                    text: 'Knowledge Transfer'
+                }
+            ],
+            pageElement: [
+                {
+                    title: 'Learning Possibilities',
+                    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-1.png',
+                    index: 0
+                },
+                 {
+                    title: 'Degree Programme',
+                    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam umque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-2.png',
+                    index: 1
+                },
+                 {
+                    title: 'Career Achievment',
+                    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-3.png',
+                    index: 2
+                },
+                 {
+                    title: 'Personal Managment',
+                    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-4.png',
+                    index: 3
+                },
+                 {
+                    title: 'Step to Success',
+                    p: 'Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-5.png',
+                    index: 4
+                },
+                 {
+                    title: 'Knowledge Trasnfer',
+                    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, possimus eos placeat cumque beatae deserunt accusamus reprehenderit cum a nesciunt ipsam rerum eveniet aliquam labore eius ea? Magni, nesciunt. Enim.',
+                    check1: 'We enrich lives through learning.',
+                    check2: 'Maximizing potential through individual attention.',
+                    check3: 'The trusted name for specializing training.',
+                    check4: 'People teach. People learn. This is where they connect.',
+                    img: 'h12-tabs-icon-6.png',
+                    index: 5
+                }
+            ]
+        }
+    },
+    methods: {
+        setCurrentActive(index) {
+            this.currentActive = index
+            
+        }
+    }
 }
 </script>
 
@@ -78,6 +177,9 @@ export default {
     .option:last-of-type {
         border-bottom: solid grey 1px;
     }
+}
+.hidden {
+    display: none;
 }
 .selected {
     position: relative;
