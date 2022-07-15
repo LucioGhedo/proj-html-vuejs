@@ -13,7 +13,7 @@
             <div class="flex-circles">
                 <div 
                 v-for="items, index in slidesArray" 
-                :key="items" 
+                :key="index" 
                 class="circle white"
                 :class="currentActive === index ? 'active': ''"
                 @click="selectThis(index)"
