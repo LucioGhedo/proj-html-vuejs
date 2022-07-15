@@ -1,11 +1,18 @@
 <template>
-    <div class="container">
-        <section>
-            <CardsComponent :CardsArray="cardsArray" />
-        </section>
-        <section>
-            <TrustedSection />
-        </section>
+    <div>
+        <div class="container">
+            <section>
+                <CardsComponent :CardsArray="cardsArray" />
+            </section>
+            <section>
+                <TrustedSection />
+            </section>
+            <section>
+                <SecondSection />
+            </section>
+        </div>
+        
+        <SliderComponent />
     </div>
 </template>
 
@@ -13,12 +20,16 @@
 import mainCards from '../assets/json/mainCards.json';
 import CardsComponent from './CardsComponent.vue';
 import TrustedSection from './TrustedSection.vue';
+import SecondSection from './SecondSection.vue';
+import SliderComponent from './SliderComponent.vue';
 
 export default {
     name: 'MainComponent',
     components: {
     CardsComponent,
-    TrustedSection
+    TrustedSection,
+    SecondSection,
+    SliderComponent
 },
     data() {
         return {
@@ -31,6 +42,9 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/common.scss';
 .container {
+    position: relative;
+}
+section {
     position: relative;
 }
 </style>

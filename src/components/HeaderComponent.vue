@@ -77,16 +77,16 @@ header::before {
     .icons {
         position: relative;
         i {
-            padding: 0 10px;
-            font-size: 17px;
+            padding: 0 4px;
+            font-size: 13px;
             color: $text1;
         }
     }
     div {
         a {
             color: $text1;
-            padding: 0 14px;
-            font-size: 15px;
+            padding: 0 0.8vw;
+            font-size: 1.5vw;
         }
     }
 }
@@ -110,7 +110,7 @@ img {
     position: absolute;
     text-align: center;
     top: -3px;
-    left: 59px;
+    left: 31px;
     color: $text1;
 }
 .text-center {

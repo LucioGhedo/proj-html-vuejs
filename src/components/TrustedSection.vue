@@ -23,7 +23,6 @@ export default {
 @import '../assets/style/common.scss';
 h2 {
     width: 44%;
-    font-size: 41px;
 }
 p {
     color: grey;
