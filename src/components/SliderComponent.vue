@@ -16,8 +16,8 @@
                 :key="index" 
                 class="circle white"
                 :class="currentActive === index ? 'active': ''"
-                @click="selectThis(index)"
-                ></div>
+                @click="selectThis(index)">
+                </div>
             </div>
         </div>
     </div>
