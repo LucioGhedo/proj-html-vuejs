@@ -1,0 +1,20 @@
+[
+    {
+        "img": "testimonials-standard-2.png",
+        "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eius optio aperiam ea praesentium. Facilis ipsam sequi architecto maiores dolorem! Neque eveniet quam dolorem omnis aspernatur amet. Accusantium, neque debitis.",
+        "name": "Joe Collins",
+        "occupation": "STUDENT"
+    },
+    {
+        "img": "testimonials-standard-1.png",
+        "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eius optio aperiam ea praesentium. Facilis ipsam sequi architecto maiores dolorem! Neque eveniet quam dolorem omnis aspernatur amet. Accusantium, neque debitis.",
+        "name": "Lucio Ghedina",
+        "occupation": "Boolean Student"
+    },
+    {
+        "img": "testimonials-standard-3.png",
+        "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In eius optio aperiam ea praesentium. Facilis ipsam sequi architecto maiores dolorem! Neque eveniet quam dolorem omnis aspernatur amet. Accusantium, neque debitis.",
+        "name": "Mario Rossi",
+        "occupation": "FA ESEMPI PER VIVERE"
+    }
+]
