@@ -16,6 +16,12 @@
         <section>
             <SelectionComponent />
         </section>
+        <section>
+            <PopularCouses />
+        </section>
+        <section>
+            
+        </section>
     </div>
 </template>
 
@@ -26,6 +32,7 @@ import TrustedSection from './TrustedSection.vue';
 import SecondSection from './SecondSection.vue';
 import SliderComponent from './SliderComponent.vue';
 import SelectionComponent from './SelectionComponent.vue';
+import PopularCouses from './PopularCouses.vue';
 
 export default {
     name: 'MainComponent',
@@ -34,7 +41,8 @@ export default {
     TrustedSection,
     SecondSection,
     SliderComponent,
-    SelectionComponent
+    SelectionComponent,
+    PopularCouses
 },
     data() {
         return {
