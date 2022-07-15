@@ -11,8 +11,11 @@
                 <SecondSection />
             </section>
         </div>
-        
+
         <SliderComponent />
+        <section>
+            <SelectionComponent />
+        </section>
     </div>
 </template>
 
@@ -22,6 +25,7 @@ import CardsComponent from './CardsComponent.vue';
 import TrustedSection from './TrustedSection.vue';
 import SecondSection from './SecondSection.vue';
 import SliderComponent from './SliderComponent.vue';
+import SelectionComponent from './SelectionComponent.vue';
 
 export default {
     name: 'MainComponent',
@@ -29,7 +33,8 @@ export default {
     CardsComponent,
     TrustedSection,
     SecondSection,
-    SliderComponent
+    SliderComponent,
+    SelectionComponent
 },
     data() {
         return {
