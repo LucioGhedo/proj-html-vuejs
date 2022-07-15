@@ -1,25 +1,31 @@
 <template>
-    <div class="flex">
-        <div class="half">
-            <img src="../assets/img/h8-slide-1-img.png" alt="World">
-        </div>
-        <div class="half">
-            <h2>Empowering Children to Reach their Potential.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae animi itaque placeat quos labore fugit reiciendis quasi recusandae, error cumque amet maiores incidunt minima nam voluptate vitae debitis aut.</p>
-            <div class="flex color-cont">
-                <div class="color">
-                    <div>156</div>
-                    <div class="small">User Stories</div>
+    <div>
+        <div class="container">
+            <div class="flex">
+                <div class="half">
+                    <img src="../assets/img/h8-slide-1-img.png" alt="World">
                 </div>
-                <div class="color">
-                    <div>356</div>
-                    <div class="small">Events</div>
+                <div class="half">
+                    <h2>Empowering Children to Reach their Potential.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae animi itaque placeat quos labore fugit reiciendis quasi recusandae, error cumque amet maiores incidunt minima nam voluptate vitae debitis aut.</p>
+                    <div class="flex color-cont">
+                        <div class="color">
+                            <div>156</div>
+                            <div class="small">User Stories</div>
+                        </div>
+                        <div class="color">
+                            <div>356</div>
+                            <div class="small">Events</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="top">
             <i class="fa-solid fa-angle-up"></i>
-            <div>TOP</div>
+            <a href="#">
+                <div>TOP</div>
+            </a>
         </div>
     </div>
 </template>
@@ -34,6 +40,10 @@ export default {
 @import '../assets/style/common.scss';
 img {
     width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 h2 {
     padding: 40px 0;
@@ -65,7 +75,7 @@ p {
 }
 .top {
     position: absolute;
-    right: -76px;
+    right: 0;
     top: 90%;
 }
 </style>

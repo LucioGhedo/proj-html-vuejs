@@ -1,11 +1,13 @@
 <template>
     <div>
-        <h2>The trusted Name for In-Home tutoring. </h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur, dicta, magnam omnis ut officia amet excepturi fugiat debitis molestiae impedit error minima ab veritatis, sed nisi esse dolorem nostrum.</p>
-        <div>
-            <a href="#">LEARN MORE</a>
+        <div class="container">
+            <h2>The trusted Name for In-Home tutoring. </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur, dicta, magnam omnis ut officia amet excepturi fugiat debitis molestiae impedit error minima ab veritatis, sed nisi esse dolorem nostrum.</p>
+            <div>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <img src="../assets/img/Capture.jpg" alt="foto">
         </div>
-        <img src="../assets/img/landing-img-5.jpg" alt="foto">
         <div class="top">
             <i class="fa-solid fa-angle-up"></i>
             <div>TOP</div>
@@ -34,7 +36,7 @@ a {
 }
 .top {
     position: absolute;
-    right: -76px;
+    right: -0;
     top: 50%;
 }
 img {

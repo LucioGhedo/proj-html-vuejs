@@ -1,46 +1,48 @@
 <template>
-    <div class="container">
+    <div>
         <div class="top">
             <i class="fa-solid fa-angle-up"></i>
             <div>TOP</div>
         </div>
-        <div class="flex">
-            <div class="selection">
-                <div 
-                @click="setCurrentActive(index)"
-                v-for="item, index in links" 
-                :key="index" 
-                :class="currentActive === index ? 'active' : 'ciao'"
-                class="option">
-                    {{item.text}}
+        <div class="container">
+            <div class="flex">
+                <div class="selection">
+                    <div 
+                    @click="setCurrentActive(index)"
+                    v-for="item, index in links" 
+                    :key="index" 
+                    :class="currentActive === index ? 'active' : 'ciao'"
+                    class="option">
+                        {{item.text}}
+                    </div>
                 </div>
-            </div>
-            <div 
-            v-for="items, index in pageElement" 
-            :key="index" 
-            class="selected"
-            :class="currentActive === index ? '' : 'hidden'">
-                <h2>{{items.title}}</h2>
-                <p>
-                    {{items.p}}
-                </p>
-                <p>
-                    <i class="fa-solid fa-check"></i> 
-                    {{items.check1}}
-                </p>
-                <p>
-                    <i class="fa-solid fa-check"></i> 
-                    {{items.check2}}
-                </p>
-                <p>
-                    <i class="fa-solid fa-check"></i> 
-                    {{items.check3}}
-                </p>
-                <p>
-                    <i class="fa-solid fa-check"></i> 
-                    {{items.check4}}
-                </p>
-                <img :src="require(`../assets/img/${items.img}`)" alt="img">
+                <div 
+                v-for="items, index in pageElement" 
+                :key="index" 
+                class="selected"
+                :class="currentActive === index ? '' : 'hidden'">
+                    <h2>{{items.title}}</h2>
+                    <p>
+                        {{items.p}}
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i> 
+                        {{items.check1}}
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i> 
+                        {{items.check2}}
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i> 
+                        {{items.check3}}
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check"></i> 
+                        {{items.check4}}
+                    </p>
+                    <img :src="require(`../assets/img/${items.img}`)" alt="img">
+                </div>
             </div>
         </div>
     </div>
@@ -154,7 +156,7 @@ export default {
 .top {
     position: absolute;
     top: 30px;
-    right: -80px;
+    right: 0px;
 }
 .flex {
     justify-content: space-between;
