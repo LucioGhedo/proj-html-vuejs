@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Android Developer",
+        "name": "David Sanders",
+        "tag": "PROGRAMMING",
+        "img": "course-5-f-img",
+        "price": "FREE"
+    },
+    {
+        "title": "Web Designing",
+        "name": "Jennifer Powell",
+        "tag": "PROGRAMMING",
+        "img": "course-6-f-img",
+        "price": "FREE"
+    },
+    {
+        "title": "Financial Modeling",
+        "name": "Edward Bowman",
+        "tag": "BUSINESS",
+        "img": "course-12-f-img",
+        "price": "$20"
+    }
+]
