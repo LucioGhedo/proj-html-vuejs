@@ -20,3 +20,12 @@ a {
 .flex {
     display: flex;
 }
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $back_11;
+    color: white;
+    width: 40px;
+}

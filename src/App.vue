@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderComponent :headerLinks="headerLink" />
-    <MainComponent />
+    <main>
+      <MainComponent />
+    </main>
   </div>
 </template>
 
