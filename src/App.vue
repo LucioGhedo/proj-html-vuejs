@@ -52,4 +52,5 @@ export default {
 
 <style lang="scss">
 @import './assets/style/common.scss';
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 </style>
