@@ -20,7 +20,7 @@
             <PopularCouses />
         </section>
         <section>
-            
+            <PricingPlans />
         </section>
     </div>
 </template>
@@ -33,6 +33,7 @@ import SecondSection from './SecondSection.vue';
 import SliderComponent from './SliderComponent.vue';
 import SelectionComponent from './SelectionComponent.vue';
 import PopularCouses from './PopularCouses.vue';
+import PricingPlans from './PricingPlans.vue';
 
 export default {
     name: 'MainComponent',
@@ -42,7 +43,8 @@ export default {
     SecondSection,
     SliderComponent,
     SelectionComponent,
-    PopularCouses
+    PopularCouses,
+    PricingPlans
 },
     data() {
         return {
