@@ -4,12 +4,16 @@
     <main>
       <MainComponent />
     </main>
+    <footer>
+      <FooterComponent :firstList="popularCoursesFooter" :secondList="support" />
+    </footer>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   data() {
@@ -39,13 +43,45 @@ export default {
           text: 'ELEMENTS',
           link: '#',
         },
+      ],
+      popularCoursesFooter: [
+        {
+          title: 'Business English',
+          name: 'Preston Marshall'
+        },
+        {
+          title: 'Social Computing',
+          name: 'David Sanders'
+        },
+        {
+          title: 'Learn Spanish',
+          name: 'Jennie King'
+        }
+      ],
+      support: [
+        {
+          support: 'User dashboard'
+        },
+        {
+          support: 'Contact US'
+        },
+        {
+          support: 'FAQ'
+        },
+        {
+          support: 'Course offer'
+        },
+        {
+          support: 'Events'
+        }
       ]
     }
   },
   name: 'App',
   components: {
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
 },
 }
 </script>
