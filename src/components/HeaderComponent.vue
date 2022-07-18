@@ -31,12 +31,12 @@
                 <div class="btn jumbo-btn"><a href="#">REGISTER NOW</a></div>
                 <div class="flex">
                     <div class="circle jumbo-cirlce">
-                        <div class="small-circle"></div>
+                        <!-- <div class="small-circle"></div> -->
                     </div>
                     <div class="circle jumbo-cirlce">
-                        <div class="small-circle"></div>
+                        <!-- <div class="small-circle"></div> -->
                     </div>
-                    <div class="circle jumbo-cirlce">
+                    <div class="circle jumbo-cirlce active">
                         <div class="small-circle"></div>
                     </div>
                 </div>
@@ -103,21 +103,28 @@ img {
     width: 200px;
 }
 .jumbo-cirlce {
+    width: 26px;
+    height: 26px;
     padding: 10px;
     margin: 10px;
     margin-top: 70px;
     margin-bottom: 20px;
-    border: solid white 3px;
     text-align: center;
     position: relative;
-    .small-circle {
-        position: absolute;
-        top: 6px;
-        right: 5.6px;
-        background-color: white;
-        height: 9px;
-        width: 9px;
-        border-radius: 50%;
+    background-color: $back_2;
+    &.active {
+        border: solid white 3px;
+        background-color: transparent;
+        .small-circle {
+            position: absolute;
+            top: 6px;
+            right: 5.6px;
+            background-color: white;
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+        }
+
     }
 }
 .flex {
