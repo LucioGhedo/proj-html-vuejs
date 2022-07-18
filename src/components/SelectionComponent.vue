@@ -53,7 +53,7 @@ export default {
     name: 'SelectionComponent',
     data() {
         return {
-            currentActive: 0,
+            currentActive: 1,
             links: [
                 {
                     text: 'What we do'
