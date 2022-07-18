@@ -44,6 +44,7 @@ export default {
     justify-content: space-between;
 }
 .card {
+    background-color: $back_1;
     width: calc((100% / 3) - 20px);
     border: solid lightgray 1px;
     position: relative;
