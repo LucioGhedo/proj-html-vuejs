@@ -164,7 +164,7 @@ export default {
 .selection {
     width: calc(30% - 5px);
     .option {
-        border: 1px solid grey;
+        border: 1px solid lightgray;
         border-bottom: none;
         line-height: 80px;
         text-align: center;
@@ -177,7 +177,7 @@ export default {
         }
     }
     .option:last-of-type {
-        border-bottom: solid grey 1px;
+        border-bottom: solid lightgray 1px;
     }
 }
 .hidden {
