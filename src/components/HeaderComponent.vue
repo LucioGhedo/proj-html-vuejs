@@ -58,7 +58,7 @@ export default {
 @import '../assets/style/common.scss';
 header {
     position: relative;
-    height: 700px;
+    height: 900px;
 }
 header::before {
     content: "";
@@ -136,7 +136,7 @@ img {
     color: white;
 }
 h3 {
-        padding-top: 140px;
+        padding-top: 250px;
         font-size: 75px;
 }
 p {
