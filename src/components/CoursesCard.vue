@@ -1,6 +1,6 @@
 <template>
 <div class="flex">
-    <div class="card" v-for="item, index in json" :key="index">
+    <div class="card" v-for="item, index in splicedArray" :key="index">
         <img :src="require(`../assets/img/${item.img}.jpg`)" alt="img">
         <div class="text-container">
             <h4>{{item.title}}</h4>
@@ -24,7 +24,35 @@
 export default {
     name: 'CoursesCard',
     props: {
-        json: Array
+        json: Array,
+        currentActive: Number,
+    },
+    data() {
+        return {
+            splicedArray: [
+                {
+                    "title": "Android Developer",
+                    "name": "David Sanders",
+                    "tag": "PROGRAMMING",
+                    "img": "course-2-f-img",
+                    "price": "FREE"
+                },
+                {
+                    "title": "Web Designer",
+                    "name": "Jennifer Powell",
+                    "tag": "PROGRAMMING",
+                    "img": "course-8-f-img",
+                    "price": "FREE"
+                },
+                {
+                    "title": "Financial Modeling",
+                    "name": "Edward Bowman",
+                    "tag": "BUSINESS",
+                    "img": "course-9-f-img",
+                    "price": "$20"
+                },
+            ],
+        }
     },
     methods: {
         isFree(price) {
@@ -33,7 +61,21 @@ export default {
             } else {
                 return false
             }
+        },
+        slidesSplice() {
+            if (this.currentActive == 1) {
+                this.splicedArray = this.listJson.slice(0, 3);
+            } else if (this.currentActive == 2) {
+                this.splicedArray = this.listJson.slice(3, 6);
+            } else if (this.currentActive == 0) {
+                this.splicedArray = this.listJson.slice(6, 9);
+            }
         }
+    },
+    computed: {
+        listJson: function(){
+            return JSON.parse(JSON.stringify(this.json));
+        },
     }
 }
 </script>

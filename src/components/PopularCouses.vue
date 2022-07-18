@@ -7,12 +7,10 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores incidunt quae minima ipsam quis cupiditate corporis
                 </p>
             </div>
-            <CoursesCard :json="cardJson" />
+            <CoursesCard :json="cardJson" :currentActive="currentActive" />
         </div>
         <div class="circle-container">
-            <div class="circle"></div>
-            <div class="circle active"></div>
-            <div class="circle"></div>
+            <div v-for="n, index in 3" :key="n" @click="setCurrentActive(index), $children[0].slidesSplice()" :class="currentActive == index ? 'active' : ''" class="circle"></div>
         </div>
         <div class="top">
             <i class="fa-solid fa-angle-up"></i>
@@ -30,6 +28,12 @@ export default {
     data() {
         return {
             cardJson: CourseCard,
+            currentActive: 0,
+        }
+    },
+    methods: {
+        setCurrentActive(index) {
+            this.currentActive = index
         }
     }
 }
