@@ -130,6 +130,7 @@ img {
     top: -3px;
     left: 31px;
     color: $text1;
+    font-size: 10px;
 }
 .text-center {
     text-align: center;
