@@ -19,5 +19,47 @@
         "tag": "BUSINESS",
         "img": "course-12-f-img",
         "price": "$20"
+    },
+    {
+        "title": "Web",
+        "name": "Mario Rossi",
+        "tag": "PROGRAMMING",
+        "img": "course-2-f-img",
+        "price": "FREE"
+    },
+    {
+        "title": "Web 2",
+        "name": "Maria Rossa",
+        "tag": "PROGRAMMING",
+        "img": "course-8-f-img",
+        "price": "FREE"
+    },
+    {
+        "title": "Lavoro 3",
+        "name": "Temp Name",
+        "tag": "BUSINESS",
+        "img": "course-9-f-img",
+        "price": "FREE"
+    },
+    {
+        "title": "Template Job",
+        "name": "TEMP NAME",
+        "tag": "PROGRAMMING",
+        "img": "course-6-f-img",
+        "price": "$20"
+    },
+    {
+        "title": "Template Job",
+        "name": "Jennifer Powell",
+        "tag": "PROGRAMMING",
+        "img": "course-5-f-img",
+        "price": "$20"
+    },
+    {
+        "title": "Template Job Modeling",
+        "name": "Edward Bowman",
+        "tag": "BUSINESS",
+        "img": "course-4-f-img",
+        "price": "$20"
     }
 ]
