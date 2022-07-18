@@ -50,11 +50,13 @@ export default {
     methods: {
         setCurrentActive(index) {
             this.currentActive = index;
+            this.setBackImage()
         }
     },
     props: {
         headerLinks: Array,
-    }
+    },
+    
 }
 </script>
 
@@ -88,7 +90,7 @@ header::before {
         position: relative;
         i {
             padding: 0 4px;
-            font-size: 13px;
+            font-size: 16px;
             color: $text1;
         }
     }

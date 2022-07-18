@@ -83,7 +83,6 @@ export default {
                     check3: 'The trusted name for specializing training.',
                     check4: 'People teach. People learn. This is where they connect.',
                     img: 'h12-tabs-icon-1.png',
-                    index: 0
                 },
                  {
                     title: 'Degree Programme',
@@ -93,7 +92,6 @@ export default {
                     check3: 'The trusted name for specializing training.',
                     check4: 'People teach. People learn. This is where they connect.',
                     img: 'h12-tabs-icon-2.png',
-                    index: 1
                 },
                  {
                     title: 'Career Achievment',
@@ -103,7 +101,6 @@ export default {
                     check3: 'The trusted name for specializing training.',
                     check4: 'People teach. People learn. This is where they connect.',
                     img: 'h12-tabs-icon-3.png',
-                    index: 2
                 },
                  {
                     title: 'Personal Managment',
@@ -113,7 +110,6 @@ export default {
                     check3: 'The trusted name for specializing training.',
                     check4: 'People teach. People learn. This is where they connect.',
                     img: 'h12-tabs-icon-4.png',
-                    index: 3
                 },
                  {
                     title: 'Step to Success',
@@ -121,9 +117,8 @@ export default {
                     check1: 'We enrich lives through learning.',
                     check2: 'Maximizing potential through individual attention.',
                     check3: 'The trusted name for specializing training.',
-                    check4: 'People teach. People learn. This is where they connect.',
+                    check4: 'Ciao :)',
                     img: 'h12-tabs-icon-5.png',
-                    index: 4
                 },
                  {
                     title: 'Knowledge Trasnfer',
@@ -133,7 +128,6 @@ export default {
                     check3: 'The trusted name for specializing training.',
                     check4: 'People teach. People learn. This is where they connect.',
                     img: 'h12-tabs-icon-6.png',
-                    index: 5
                 }
             ]
         }
