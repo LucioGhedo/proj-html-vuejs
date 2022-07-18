@@ -30,14 +30,8 @@
                 </p>
                 <div class="btn jumbo-btn"><a href="#">REGISTER NOW</a></div>
                 <div class="flex">
-                    <div class="circle jumbo-cirlce">
-                        <!-- <div class="small-circle"></div> -->
-                    </div>
-                    <div class="circle jumbo-cirlce">
-                        <!-- <div class="small-circle"></div> -->
-                    </div>
-                    <div class="circle jumbo-cirlce active">
-                        <div class="small-circle"></div>
+                    <div @click="setCurrentActive(index)" v-for="item, index in 3" :key="item" class="circle jumbo-cirlce" :class="currentActive === index ? 'active' : '' ">
+                        <div v-if="currentActive === index" class="small-circle"></div>
                     </div>
                 </div>
             </div>
@@ -48,6 +42,16 @@
 <script>
 export default {
     name: 'HeaderComponent',
+    data() {
+        return {
+            currentActive: 2,
+        }
+    },
+    methods: {
+        setCurrentActive(index) {
+            this.currentActive = index;
+        }
+    },
     props: {
         headerLinks: Array,
     }
@@ -144,7 +148,7 @@ img {
     color: white;
 }
 h3 {
-        padding-top: 250px;
+        padding-top: 15vw;
         font-size: 75px;
 }
 p {
@@ -157,7 +161,7 @@ p {
     padding: 25px;
     width: 200px;
     background-color: $back_11;
-    margin-top: 80px;
+    margin-top: 50px;
     a {
         color: $text1;
     }
