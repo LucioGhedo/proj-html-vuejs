@@ -29,7 +29,6 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 10px;
     img {
         width: 70px;
         padding-bottom: 15px;
