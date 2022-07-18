@@ -154,6 +154,7 @@ img {
 }
 .hovereffect:hover {
     background-color: $back_3;
+    border-radius: 5px;
     text-decoration: underline $text4;
     padding: 5px;
     width: fit-content;
