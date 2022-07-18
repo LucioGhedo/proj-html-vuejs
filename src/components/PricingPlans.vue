@@ -243,11 +243,16 @@ export default {
 }
 .blue-btn {
     background-color: $back_11;
-    color: $text1;
+    a {
+        color: $text1;
+    }
 }
 .grey-btn {
     background-color: $back_3;
-    border: solid $text8 1px;
+    border: solid lightgray 1px;
+    a {
+        color: $text8;
+    }
 }
 .btn-card {
     height: 90px;
