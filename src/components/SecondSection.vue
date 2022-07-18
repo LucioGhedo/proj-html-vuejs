@@ -10,11 +10,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae animi itaque placeat quos labore fugit reiciendis quasi recusandae, error cumque amet maiores incidunt minima nam voluptate vitae debitis aut.</p>
                     <div class="flex color-cont">
                         <div class="color">
-                            <div>156</div>
+                            <div class="num">156</div>
                             <div class="small">User Stories</div>
                         </div>
                         <div class="color">
-                            <div>356</div>
+                            <div class="num">356</div>
                             <div class="small">Events</div>
                         </div>
                     </div>
@@ -40,6 +40,10 @@ export default {
 @import '../assets/style/common.scss';
 img {
     width: 100%;
+}
+.num {
+    font-size: 49px;
+    font-weight: 600;
 }
 a {
     text-decoration: none;
