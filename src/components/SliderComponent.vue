@@ -60,6 +60,7 @@ export default {
     background-color: $back_11;
     background-image: url('../assets/img/interactive-map-slider-img-1.png');
     color: $text1;
+    height: 400px;
 }
 .container {
     text-align: center;
@@ -69,8 +70,10 @@ p {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
+    height: 90px;
     &.occupation {
         font-size: 10px;
+        height: fit-content;
     }
 }
 .hidden {
@@ -87,6 +90,5 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
 }
 </style>
