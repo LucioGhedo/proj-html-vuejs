@@ -76,6 +76,6 @@ p {
 .top {
     position: absolute;
     right: 0;
-    top: 90%;
+    top: 80%;
 }
 </style>

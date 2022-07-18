@@ -12,7 +12,7 @@
         </div>
         <div class="container">
             <div class="center">
-                <h2>Popular Online Courses</h2>
+                <h2>Pricing Plans</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperio
                 </p>
@@ -39,7 +39,7 @@
                     <div class="firstcol-card textcenter color">
                         <img src="../assets/img/h5-custom-icon-7.png" alt="lens">
                         <h4>Standard</h4>
-                        <span class="price">12$</span>
+                        <div class="price">12$</div>
                     </div>
                     <div class="card textcenter">
                         2
@@ -62,7 +62,7 @@
                     <div class="card textcenter grey">
                         <i class="fa-solid fa-x"></i>
                     </div>
-                    <div class="card textcenter btn-card">
+                    <div class="card first textcenter btn-card">
                         <div class="btn grey-btn">
                             <a href="#">GET IT NOW</a>
                         </div>
@@ -74,7 +74,7 @@
                     <div class="firstcol-card textcenter color active">
                         <img src="../assets/img/h5-custom-icon-8.png" alt="brain">
                         <h4>Professional</h4>
-                        <span class="price">59$</span>
+                        <div class="price">59$</div>
                     </div>
                     <div class="card textcenter">
                         4
@@ -109,7 +109,7 @@
                     <div class="firstcol-card textcenter color">
                         <img src="../assets/img/h5-custom-icon-9.png" alt="hat">
                         <h4>Advanced</h4>
-                        <span class="price">88$</span>
+                        <div class="price">88$</div>
                     </div>
                     <div class="card textcenter">
                         6
@@ -162,6 +162,7 @@ export default {
 }
 .price {
     font-weight: 900;
+    margin-bottom: 15px;
 }
 .textcenter {
     text-align: center;
@@ -197,11 +198,15 @@ export default {
         margin-top: 25px;
     }
     .firstcol-card {
-        border: solid lightgray 1px;
+        border-right: solid lightgray 1px;
+        border-bottom: solid lightgray 1px;
         border-top: solid $back_10 5px;
         &.active {
             border-top: solid $back_11 5px;
         }
+    }
+    .firstcol-card:first-of-type {
+        border-left: solid lightgray 1px;
     }
 }
 .card {
@@ -209,14 +214,20 @@ export default {
     align-items: center;
     justify-content: center;
     height: 50px;
-    border: solid lightgray 1px;
+    border-bottom: solid lightgray 1px;
+    border-right: solid lightgray 1px;
+}
+.first {
+    border-left: solid lightgray 1px;
 }
 .card-2 {
     display: flex;
     align-items: center;
     height: 40px;
     padding: 0 10px;
-    border: solid lightgray 1px;
+    border-bottom: solid lightgray 1px;
+    border-right: solid lightgray 1px;
+    border-left: solid lightgray 1px;
 }
 .blue {
     color: $text4;

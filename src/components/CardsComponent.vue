@@ -23,7 +23,6 @@ export default {
     margin: 40px 0;
 }
 .card {
-    background-color: $back_8;
     width: calc(99% / 5);
     height: 150px;
     display: flex;
@@ -31,7 +30,6 @@ export default {
     align-items: center;
     flex-direction: column;
     margin: 0 10px;
-    border: solid $back_4 1px;
     img {
         width: 70px;
         padding-bottom: 15px;
@@ -39,6 +37,10 @@ export default {
     .text {
         font-weight: 800;
     }
+}
+.card:hover {
+    border: solid lightgray 1px;
+    background-color: $back_8;
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="back">
         <div class="top">
-            <a href="#" class="top">
+            <a href="#">
                 <i class="fa-solid fa-angle-up"></i>
                 <div>TOP</div>
             </a>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col">
                     <h3>Popular Courses</h3>
-                    <div v-for="item in firstList" :key="item" class="text hovereffect">
+                    <div v-for="item, index in firstList" :key="index" class="text hovereffect">
                         <div class="title">
                             {{item.title}}
                         </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col">
                     <h3>Support</h3>
-                    <div v-for="items in secondList" :key="items" class="text text8 hovereffect">
+                    <div v-for="items, index in secondList" :key="index" class="text text8 hovereffect">
                         <div>
                             {{items.support}}
                         </div>
@@ -136,6 +136,17 @@ img {
     position: absolute;
     bottom: 50px;
     right: 0;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i {
+            color: $text1;
+        }
+        div {
+            color: $text1;
+        }
+    }
 }
 .hovereffect {
     padding: 5px;
