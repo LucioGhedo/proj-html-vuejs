@@ -150,6 +150,7 @@ img {
 }
 .hovereffect {
     padding: 5px;
+    width: fit-content;
 }
 .hovereffect:hover {
     background-color: $back_3;
