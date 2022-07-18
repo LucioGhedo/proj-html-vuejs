@@ -23,7 +23,7 @@ export default {
     border-top: 1px solid lightgray;
 }
 .img-container {
-    margin: 40px 0;
+    margin: 75px 0;
     img {
         width: calc((100% / 4) - 5px);
     }
