@@ -10,7 +10,7 @@
             <div class="col-container">
                 <div class="col">
                     <img src="../assets/img/footer-logo-1.png" alt="logo">
-                    <p>
+                    <p class="gray">
                         Providing Life Changing Experiences Throught Education.
                         Class That Fit Your Busy Life. Closer to Home
                     </p>
@@ -163,5 +163,8 @@ img {
     span {
         color: $text4;
     }
+}
+.gray {
+    color: gray;
 }
 </style>
