@@ -1,6 +1,8 @@
 <template>
     <div class="back">
         <div class="container">
+            <!-- stampo una slide per ogni elemento di slidesarray -->
+            <!-- e gli do una classe dinamica che in base all'index dell elemento nasconde o mostra la singola slide -->
             <div 
             v-for="item, index in slidesArray" 
             :key="index"
@@ -11,6 +13,8 @@
                 <p class="occupation">{{item.occupation}}</p>
             </div>
             <div class="flex-circles">
+                <!-- stampo i pallini sempre con classe dinamica relativa all'index per le slide
+                 e al click sopra richiamano selectThis() -->
                 <div 
                 v-for="items, index in slidesArray" 
                 :key="index" 
@@ -30,14 +34,19 @@ export default {
     name: 'SliderComponent',
     methods: {
         setCurrentActive() {
+            // faccio un setinterval per scorrere le slides in automatico
             setInterval(() => {
+                // incremento currentactive finchè è minore a slidesarray
                 if (this.currentActive < this.slidesArray.length - 1) {
                     this.currentActive ++
-                } else if (this.currentActive === this.slidesArray.length - 1) {
+                } 
+                // se currentactive è uguale a slidesarray lo riporto a zero
+                 else if (this.currentActive === this.slidesArray.length - 1) {
                     this.currentActive = 0
                 }
             }, 6000);
         },
+        // seleziona la slide attiva in base al click dell'utente
         selectThis(index) {
             this.currentActive = index
         }
@@ -48,6 +57,7 @@ export default {
             currentActive: 0,
         }
     },
+    // al created faccio partire il setinterval
     created() {
         this.setCurrentActive();
     }

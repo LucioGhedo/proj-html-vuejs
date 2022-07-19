@@ -2,6 +2,7 @@
     <div>
         <div class="container">
             <section>
+                <!-- passo alle card i dati come props -->
                 <CardsComponent :CardsArray="cardsArray" />
             </section>
         </div>

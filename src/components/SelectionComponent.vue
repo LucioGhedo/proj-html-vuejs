@@ -7,15 +7,20 @@
         <div class="container">
             <div class="flex">
                 <div class="selection">
+                    <!-- stampo le selection per tutti i link che abbiamo
+                    e gli dico al click di invocare setCurrentActive() 
+                    e ha sempre una classe dinamica per dire se è attivo o no -->
                     <div 
                     @click="setCurrentActive(index)"
                     v-for="item, index in links" 
                     :key="index" 
-                    :class="currentActive === index ? 'active' : 'ciao'"
+                    :class="currentActive === index ? 'active' : ''"
                     class="option">
                         {{item.text}}
                     </div>
                 </div>
+                <!-- qui stampo la pagina in base a ciò che abbiamo schiacciato nella selection
+                e lo faccio sempre con la classe dinamica che lo nasconde o lo mostra in base all'index -->
                 <div 
                 v-for="items, index in pageElement" 
                 :key="index" 
@@ -133,6 +138,7 @@ export default {
         }
     },
     methods: {
+        // imposta currentactive = index di ciò che abbiamo cliccato
         setCurrentActive(index) {
             this.currentActive = index
             

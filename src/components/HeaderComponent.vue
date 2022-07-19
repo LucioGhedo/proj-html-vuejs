@@ -30,7 +30,14 @@
                 </p>
                 <div class="btn jumbo-btn"><a href="#">REGISTER NOW</a></div>
                 <div class="flex">
-                    <div @click="setCurrentActive(index)" v-for="item, index in 3" :key="item" class="circle jumbo-cirlce" :class="currentActive === index ? 'active' : '' ">
+                    <!-- stampo i pallini (3) e al click richiamano la funzione setCurrentActive() e gli do una classe dinamica -->
+                    <div 
+                    @click="setCurrentActive(index)" 
+                    v-for="item, index in 3" 
+                    :key="item" 
+                    class="circle jumbo-cirlce" 
+                    :class="currentActive === index ? 'active' : '' ">
+                        <!-- se currentactive = index stampo il pallino piccolo dentro per dire che è lui selezionato -->
                         <div v-if="currentActive === index" class="small-circle"></div>
                     </div>
                 </div>
@@ -50,7 +57,6 @@ export default {
     methods: {
         setCurrentActive(index) {
             this.currentActive = index;
-            this.setBackImage()
         }
     },
     props: {

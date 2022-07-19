@@ -7,10 +7,20 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores incidunt quae minima ipsam quis cupiditate corporis
                 </p>
             </div>
+            <!-- dentro a popularcourses stampo le slides di coursescard e gli passo con i props chi è attivo e il file json -->
             <CoursesCard :json="cardJson" :currentActive="currentActive" />
         </div>
         <div class="circle-container">
-            <div v-for="n, index in 3" :key="n" @click="setCurrentActive(index), $children[0].slidesSplice()" :class="currentActive == index ? 'active' : ''" class="circle"></div>
+            <!-- stampo i tre pallini su cui posso selezionare le slize e al click richiamo
+            setCurrentActive() e slidesSplice() che è una funzione del figlio, uso
+            $children[0] per dirgli che la funzione la trova nel componente figlio -->
+            <div 
+            v-for="n, index in 3" 
+            :key="n" 
+            @click="setCurrentActive(index), $children[0].slidesSplice()" 
+            :class="currentActive == index ? 'active' : ''" 
+            class="circle">
+            </div>
         </div>
         <div class="top">
             <i class="fa-solid fa-angle-up"></i>
@@ -32,22 +42,27 @@ export default {
         }
     },
     methods: {
+        // qui setinterval per fare girare le slides in automatico
         setCurrentActive(index) {
             this.currentActive = index;
             setInterval(() => {
                 if (this.currentActive < 2) {
                     this.currentActive = this.currentActive + 1;
+                    // richiamo la funzione che accorcia l'array nel componente figlio
                     this.$children[0].slidesSplice();
                 } else if (this.currentActive == 2) {
                     this.currentActive = 0
+                    // richiamo la funzione che accorcia l'array nel componente figlio
                     this.$children[0].slidesSplice();
                 }
             }, 9000);
         },
+        // di default l'elemento attivo è 0
         setZero() {
             this.currentActive = 0;
         }
     },
+    // funzioni che partono al mounted
     mounted() {
         this.setCurrentActive();
         this.setZero();

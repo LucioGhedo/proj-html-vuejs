@@ -1,6 +1,8 @@
 <template>
     <div class="card-container">
+        <!-- stampo per ogni card nell'array una singola card -->
         <div class="card" v-for="item, index in CardsArray" :key="index">
+            <!-- faccio il require dell'img e concateno il link con i backtick -->
             <img :src="require(`../assets/img/${item.img}.png`)" :alt="item.text">
             <span class="text">{{item.text}}</span>
         </div>

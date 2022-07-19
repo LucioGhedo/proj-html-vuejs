@@ -29,6 +29,7 @@ export default {
     },
     data() {
         return {
+            // le slides default con le quali la presentazione inizia
             splicedArray: [
                 {
                     "title": "Android Developer",
@@ -55,6 +56,7 @@ export default {
         }
     },
     methods: {
+        // controllo il prezzo e restituisco un output vero/falso
         isFree(price) {
             if (price == 'FREE') {
                 return true
@@ -62,6 +64,7 @@ export default {
                 return false
             }
         },
+        // in base all'index del currentactive questa funzione accorcia l'array a 3 elementi e dice se mostrare i primi tre, i secondi o gli ultimi.
         slidesSplice() {
             if (this.currentActive == 1) {
                 this.splicedArray = this.listJson.slice(0, 3);
@@ -72,6 +75,7 @@ export default {
             }
         }
     },
+    // questa funzione rende modificabile il file json per poterlo usare nelle altre funzioni e lavorarci sopra
     computed: {
         listJson: function(){
             return JSON.parse(JSON.stringify(this.json));
