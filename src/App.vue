@@ -6,6 +6,7 @@
       <MainComponent />
     </main>
     <footer>
+      <!-- passo come props le liste che andranno a popolare questa area -->
       <FooterComponent :firstList="popularCoursesFooter" :secondList="support" />
     </footer>
   </div>

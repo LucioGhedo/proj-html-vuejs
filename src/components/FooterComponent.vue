@@ -25,6 +25,7 @@
                 </div>
                 <div class="col">
                     <h3>Popular Courses</h3>
+                    <!-- stampo un elemento (item) per ogni oggetto dell'array (firstList) -->
                     <div v-for="item, index in firstList" :key="index" class="text hovereffect">
                         <div class="title">
                             {{item.title}}
@@ -36,6 +37,7 @@
                 </div>
                 <div class="col">
                     <h3>Support</h3>
+                    <!-- stampo un elemento (item) per ogni oggetto dell'array (secondList) -->
                     <div v-for="items, index in secondList" :key="index" class="text text8 hovereffect">
                         <div>
                             {{items.support}}
@@ -69,6 +71,7 @@
 <script>
 export default {
     name: 'FooterComponent',
+    // le liste arrivano come props sotto forma di array
     props: {
         firstList: Array,
         secondList: Array,
