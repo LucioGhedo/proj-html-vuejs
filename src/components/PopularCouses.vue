@@ -22,10 +22,10 @@
             class="circle">
             </div>
         </div>
-        <div class="top">
+        <a href="#" class="top">
             <i class="fa-solid fa-angle-up"></i>
             <div>TOP</div>
-        </div>
+        </a>
     </div>
 </template>
 

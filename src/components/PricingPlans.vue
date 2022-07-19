@@ -6,10 +6,10 @@
         <div class="circle-red">
             <img class="circle-img" src="../assets/svg/svg-0.svg" alt="cirlce?">
         </div>
-        <div class="top">
+        <a href="#" class="top">
             <i class="fa-solid fa-angle-up"></i>
             <div>TOP</div>
-        </div>
+        </a>
         <div class="container">
             <div class="center">
                 <h2>Pricing Plans</h2>

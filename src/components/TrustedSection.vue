@@ -8,10 +8,10 @@
             </div>
             <img src="../assets/img/Capture.jpg" alt="foto">
         </div>
-        <div class="top">
+        <a href="#" class="top">
             <i class="fa-solid fa-angle-up"></i>
             <div>TOP</div>
-        </div>
+        </a>
     </div>
 </template>
 
