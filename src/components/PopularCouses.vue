@@ -33,8 +33,24 @@ export default {
     },
     methods: {
         setCurrentActive(index) {
-            this.currentActive = index
+            this.currentActive = index;
+            setInterval(() => {
+                if (this.currentActive < 2) {
+                    this.currentActive = this.currentActive + 1;
+                    this.$children[0].slidesSplice();
+                } else if (this.currentActive == 2) {
+                    this.currentActive = 0
+                    this.$children[0].slidesSplice();
+                }
+            }, 9000);
+        },
+        setZero() {
+            this.currentActive = 0;
         }
+    },
+    mounted() {
+        this.setCurrentActive();
+        this.setZero();
     }
 }
 </script>
