@@ -1,9 +1,5 @@
 <template>
     <div>
-        <div class="top">
-            <i class="fa-solid fa-angle-up"></i>
-            <div>TOP</div>
-        </div>
         <div class="container">
             <div class="flex">
                 <div class="selection">
@@ -49,6 +45,10 @@
                     <img :src="require(`../assets/img/${items.img}`)" alt="img">
                 </div>
             </div>
+        </div>
+        <div class="top">
+            <i class="fa-solid fa-angle-up"></i>
+            <div>TOP</div>
         </div>
     </div>
 </template>
@@ -201,7 +201,7 @@ export default {
     }
 }
 i {
-    color: $text4;
+    color: $text1;
     padding: 0 5px;
 }
 </style>
