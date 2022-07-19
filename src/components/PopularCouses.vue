@@ -42,20 +42,8 @@ export default {
         }
     },
     methods: {
-        // qui setinterval per fare girare le slides in automatico
         setCurrentActive(index) {
             this.currentActive = index;
-            setInterval(() => {
-                if (this.currentActive < 2) {
-                    this.currentActive = this.currentActive + 1;
-                    // richiamo la funzione che accorcia l'array nel componente figlio
-                    this.$children[0].slidesSplice();
-                } else if (this.currentActive == 2) {
-                    this.currentActive = 0
-                    // richiamo la funzione che accorcia l'array nel componente figlio
-                    this.$children[0].slidesSplice();
-                }
-            }, 9000);
         },
         // di default l'elemento attivo è 0
         setZero() {
