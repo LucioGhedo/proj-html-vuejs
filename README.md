@@ -13,6 +13,11 @@ strutturando il layout in almeno 3 macro-componenti:
 Header, Main e Footer.
 Popolare le voci di menù di Header e Footer dinamicamente,
 tramite delle props, creando una struttura dati idonea.)
+
+## AGGIUNTE QUASI TUTTE LE FUNZIONALITÀ
+
+> (Manca solo cambiare la background image dell header quando
+cambio il currentActive)
 ## Project setup
 ```
 npm install
